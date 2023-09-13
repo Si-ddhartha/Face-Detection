@@ -34,9 +34,9 @@ b) **Localization**
     
     Add custom layers on top of the VGG16 base to perform classification and localization tasks.
     
-    Design the classification head to predict whether a face is present in the input image or not, typically as a binary classification task (face or no face).
+    Designed the classification head to predict whether a face is present in the input image or not, typically as a binary classification task (face or no face).
     
-    Design the localization head to predict the bounding box coordinates around the detected face.
+    Designed the localization head to predict the bounding box coordinates around the detected face.
 
 4. Training:
 
