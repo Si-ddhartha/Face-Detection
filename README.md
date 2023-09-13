@@ -5,18 +5,20 @@ Face detection is a critical component in computer vision applications, from sec
 The face detection model is fundamentally composed of two distinct components:-
 
 a) **Classification**
-  
+
   This component determines whether an object exists in the image and classifies it.
 
 b) **Localization**
 
   This component identifies the coordinates for the bounding box if an object is present.
 
+We will use Keras Functional API, which allows us to have two different loss functions and combine them in the end.
+
 ## **Project Description:**
 
 1. Data Collection and Preprocessing:
 
-    Collected a diverse dataset of images that contain faces using opencv. The dataset includes images with varying lighting conditions and poses.
+    Collected a diverse dataset of images that contain faces using OpenCV. The dataset includes images with varying lighting conditions and poses.
     
     Annotate the dataset with bounding box coordinates around the faces for localization.
     
@@ -33,12 +35,12 @@ b) **Localization**
     Removed the fully connected layers of VGG16, keeping only the convolutional layers.
     
     Add custom layers on top of the VGG16 base to perform classification and localization tasks.
-    
+       
     Designed the classification head to predict whether a face is present in the input image or not, typically as a binary classification task (face or no face).
     
     Designed the localization head to predict the bounding box coordinates around the detected face.
 
-4. Training:
+5. Training:
 
     Train the model on the training dataset using suitable loss functions for both classification and localization tasks.
     
@@ -46,11 +48,11 @@ b) **Localization**
     
     Used binary cross-entropy for classification.
 
-5. Evaluation:
+6. Evaluation:
 
     Evaluate the model's performance on the validation dataset.
 
-6. Testing:
+7. Testing:
 
     Assess the model's performance on the testing dataset to estimate its real-world applicability.
     
