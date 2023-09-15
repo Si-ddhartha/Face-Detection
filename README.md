@@ -2,6 +2,12 @@
 
 Face detection is a critical component in computer vision applications, from security systems to social media filters. This project aims to create a deep-learning model for face detection using TensorFlow from scratch.
 
+
+![collage3](https://github.com/Si-ddhartha/Face-Detection/assets/74449359/c6dc6fa2-17d4-4926-bbfc-30eb28034289)
+
+*The images were resized, resulting in reduced quality.*
+
+
 The face detection model is fundamentally composed of two distinct components:-
 
 a) **Classification**
